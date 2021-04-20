@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test form</title>
+</head>
+<body>
+    <form action="answer" method="post">
+        {{temple_dict[0]}}
+        <br>answers</br>
+        <input type="hidden" name="id" value={{temple_dict[4]}}>
+        <input type="radio" name="answer" value="A">{{temple_dict[1]}}<br>
+        <input type="radio" name="answer" value="B">{{temple_dict[2]}}<br>
+        <input type="radio" name="answer" value="C">{{temple_dict[3]}}<br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
