@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>choose your favority hash function</title>
-</head>
+{% include "head.html" %}
 <body>
-    choose your favority hash function
-    <br>
-    <a href="/questions?number=1">start</a>
+
+	<section style="margin-top:10%">
+		<div class="container text-center">
+			<img src="/static/pic/cryptology_logo.png">
+			<h1 class="mb-1">choose your favority hash function</h1>
+			<br>
+			<a class="btn btn-primary btn-l" style="width:10%" href="/questions?number=1">start</a>
+		</div>
+	</section>
+	
+	{% include "scripts.html" %}
 </body>
 </html>

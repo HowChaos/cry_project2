@@ -1,5 +1,5 @@
 temple_dict = {
-    '1': ["question1", "answer1-1", "answer1-2", "answer1-3",'1'],
-    '2': ["question2", "answer2-1", "answer2-2", "answer2-3",'2'],
-    '3': ["question3", "answer3-1", "answer3-2", "answer3-3",'3']
+    '1': {"id":1,"question":"Which field do you want to use the hash function:", "choices":["Non-cryptographic", "Cryptographic related", "Security app & Protocol","Not sure"]},
+    '2': {"id":2,"question":"Could you give us more detail about your usage?", "choices":["Verify data integrity", "For HMAC", "Signature", "Password management", "CA", "Design a security app", "Design a security protocol", "Not sure"]},
+    '3': {"id":3,"question":"How strong is the security you want?", "choices":["High", "Medium", "Low", "Not sure"]}
 }
