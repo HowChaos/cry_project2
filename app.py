@@ -26,10 +26,8 @@ def questions():
 def answer():
     questions_answer = request.form['answer']
     questions_id = str(int(request.form['id']) + 1)
-    if questions_answer == 'B':
-        return redirect('/questions?number='+questions_id)
-    else:
-        return "your answer is " + questions_answer + ",which is totally wrong!"
+    return redirect('/questions?number='+questions_id)
+
 
 
 if __name__ == '__main__':
