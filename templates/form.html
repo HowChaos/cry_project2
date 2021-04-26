@@ -12,6 +12,7 @@
 					<h4 class="mb-0">{{temple_dict['question']}}</h4>
 					<div class="row" style="margin-top:3%">
 						<input type="hidden" name="id" value={{temple_dict['id']}}>
+                        <input type="hidden" name="url_score" value={{url_score}}>
 						{% for item in temple_dict['choices'] %}
 							<div class="radio" style="margin-top:1%">
 								<input id="{{item.index}}" type="radio" name="answer" value="{{item}}">

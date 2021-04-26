@@ -1,5 +1,57 @@
+#score: MD5-SHA1-SHA2-SHA3-BLAKE2
 temple_dict = {
-    '1': {"id":1,"question":"Which field do you want to use the hash function:", "choices":["Non-cryptographic", "Cryptographic related", "Security app & Protocol","Not sure"]},
-    '2': {"id":2,"question":"Could you give us more detail about your usage?", "choices":["Verify data integrity", "For HMAC", "Signature", "Password management", "CA", "Design a security app", "Design a security protocol", "Not sure"]},
-    '3': {"id":3,"question":"How strong is the security you want?", "choices":["High", "Medium", "Low", "Not sure"]}
+    '1': {"id": 1,
+          "question": "Which field do you want to use the hash function:",
+          "choices": ["Non-cryptographic", "Cryptographic related", "Security app & Protocol", "Not sure"],
+          "Non-cryptographic": "4-2-2-2-2",
+          "Cryptographic related": "2-4-4-4-4",
+          "Security app & Protocol": "0-2-4-4-3",
+          "Not sure": "2-1-4-4-3"
+          },
+    '2': {"id": 2,
+          "question": "Could you give us more detail about your usage?",
+          "choices": ["Verify data integrity", "For HMAC", "Signature", "Password management", "CA", "Design a "
+                                                                                                     "security app",
+                      "Design a security protocol", "Not sure"],
+          "Verify data integrity": "4-0-0-0-0",
+          "For HMAC": "0-4-0-0-0",
+          "Signature": "4-4-0-0-0",
+          "Password management": "0-0-0-0-4",
+          "CA": "0-0-4-4-0",
+          "Design a security app": "0-0-0-4-0",
+          "Not sure": "2-2-4-3-4"
+          },
+    '3': {"id": 3,
+          "question": "How strong is the security you want?",
+          "choices": ["High", "Medium", "Low", "Not sure"],
+          "High": "1-1-2-4-3",
+          "Medium": "1-1-3-2-4",
+          "Low": "4-4-3-1-2",
+          "Not sure": "1-1-2-4-3"
+          },
+    '4': {"id": 4,
+          "question": "How strong is the security you want?",
+          "choices": ["Fast", "Medium", "SLow", "Not sure"],
+          "Fast": "3-1-1-2-4",
+          "Medium": "2-2-4-3-1",
+          "SLow": "2-4-4-3-1",
+          "Not sure": "1-1-3-2-4"
+          },
+    '5': {"id": 5,
+          "question": "Which attack do you want to afford?",
+          "choices": ["Collision Attack", "Man-in-the-middle Attack", "Length extension Attack", "Squeeze Attack", "Not sure"],
+          "Collision Attack": "0-1-2-4-3",
+          "Man-in-the-middle Attack": "0-0-2-2-4",
+          "Length extension Attack": "0-0-2-4-3",
+          "Squeeze Attack": "0-0-0-0-4",
+          "Not sure": "0-1-2-4-3"
+          },
+    '6': {"id": 6,
+          "question": "How length of the output do you want?",
+          "choices": ["128", "160", "224", "256", "384", "512", "Not sure"],
+         },
+    '7': {"id": 7,
+          "question": "How length of the output do you want?",
+          "choices": ["224", "256", "384", "512", "Not sure"],
+         }
 }
