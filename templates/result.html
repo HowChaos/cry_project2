@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "head.html" %}
+<body>
+
+	<section style="margin-top:10%">
+		<div style="text-align:center">
+			<img src="/static/pic/cryptology_logo.png" style="display:block;margin:0 auto">
+		</div>
+		<div class="container text-center">
+			<p>The ranking of Hash functions:</p>
+			{% for item in score_rank %}
+			<p>No. {{item}}: {{score_rank[item]['func']}}, score: {{score_rank[item]['score']}}</p>
+			{% endfor %}
+			<h4>Thus, we recommend {% for func in chosen_func %} {{func}}, {% endfor %} with output length {{output_len}}</h4>
+
+		</div>
+	</section>
+	
+	{% include "scripts.html" %}
+</body>
+</html>
