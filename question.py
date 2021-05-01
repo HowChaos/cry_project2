@@ -12,13 +12,14 @@ temple_dict = {
           "question": "Could you give us more detail about your usage?",
           "choices": ["Verify data integrity", "For HMAC", "Signature", "Password management", "CA", "Design a "
                                                                                                      "security app",
-                      "Design a security protocol", "Not sure"],
+                                                                                                     "Design a security protocol", "Not sure"],
           "Verify data integrity": "4-0-0-0-0",
           "For HMAC": "0-4-0-0-0",
           "Signature": "4-4-0-0-0",
           "Password management": "0-0-0-0-4",
           "CA": "0-0-4-4-0",
           "Design a security app": "0-0-0-4-0",
+          "Design a security protocol": "0-0-4-0-0",
           "Not sure": "2-2-4-3-4"
           },
     '3': {"id": 3,
@@ -30,7 +31,7 @@ temple_dict = {
           "Not sure": "1-1-2-4-3"
           },
     '4': {"id": 4,
-          "question": "How strong is the security you want?",
+          "question": "What speed of computation do you want?",
           "choices": ["Fast", "Medium", "SLow", "Not sure"],
           "Fast": "3-1-1-2-4",
           "Medium": "2-2-4-3-1",
